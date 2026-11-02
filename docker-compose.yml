@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:17
+    container_name: ampara-db
+    environment:
+      POSTGRES_DB: ampara
+      POSTGRES_USER: ampara
+      POSTGRES_PASSWORD: ampara
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
