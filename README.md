@@ -4,7 +4,7 @@
 
 Plataforma para centralizar e acompanhar o processo de resgate, triagem, tratamento e adoção de animais em situação de rua. Projeto acadêmico de Análise e Desenvolvimento de Sistemas, conectado aos conceitos de Cidades Inteligentes e Saúde Única.
 
-## Arquitetura
+# Arquitetura
 
 O projeto foi migrado de Jakarta Faces/PrimeFaces + WildFly para uma arquitetura em duas partes:
 
