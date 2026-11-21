@@ -2,7 +2,7 @@ package br.com.ampara.model;
 
 import br.com.ampara.model.enums.*;
 import jakarta.persistence.*;
-import java.time.Instant;
+
 
 @Entity
 @Table(name = "usuario")

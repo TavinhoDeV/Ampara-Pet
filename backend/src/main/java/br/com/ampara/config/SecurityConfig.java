@@ -64,7 +64,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource(
             @Value("${ampara.cors.allowed-origins}") String origens) {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(Arrays.stream(origens.split(",")).map(String::trim).toList());
+        config.setAllowedOriginPatterns(Arrays.stream(origens.split(",")).map(String::trim).toList());
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization", "Content-Type"));
         UrlBasedCorsConfigurationSource fonte = new UrlBasedCorsConfigurationSource();
